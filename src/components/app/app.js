@@ -1,9 +1,12 @@
 import React from 'react';
+import './app.scss';
 
 function App() {
   return (
     <main className='App'>
-       test
+      <div>
+        <p>test</p>
+      </div>
     </main>
   );
 }
