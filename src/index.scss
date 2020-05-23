@@ -1,6 +1,33 @@
+.main-container {
+  position: relative;
+}
+.background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.fade-enter{
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+.fade-exit{
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active{
+  transition: opacity 500ms;
+}
+
+
 /*------------------
    Variables
 ------------------*/
+
 
 /*------------------
    Imports
@@ -53,8 +80,68 @@ p, li {
 /*------------------
    Elements
 ------------------*/
-
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background: #1E88E5;
+  color: #fff;
+  border-radius: 7px;
+  &:hover {
+    background: #1976D2;
+  }
+}
 
 /*------------------
    Layout (navigation and body)
 ------------------*/
+@media (min-width: 800px) {
+  .app-body {
+    display: flex;
+  }
+  nav {
+    width: 90px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background: #37474F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nav1, .nav2 {
+    position: unset;
+    flex-direction: column;
+  }
+}
+
+main {
+  width: 100%;
+  opacity: 1;
+  transition: all 250ms linear;
+  &.hidden {
+    opacity: 0;
+  }
+}
+.background {
+  padding: 50px 0;
+  min-height: 100vh;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 20px;
+  min-height: calc(100vh - 100px);
+  max-width: 1340px;
+  & > h1, & > h2 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .background {
+    padding: 0;
+  }
+  .wrapper {
+    min-height: 100vh;
+  }
+}

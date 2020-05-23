@@ -1,0 +1,33 @@
+.home-page {
+  &.background {
+    background: #212121;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .intro {
+    text-align: center;
+  }
+  .intro * {
+    color: #fff;
+  }
+}
+#animation {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 800px) {
+  .home-page {
+    .wrapper {
+      flex-direction: row;
+      align-items: center;
+      max-width: 80%;
+    }
+    .intro {
+      text-align: left;
+    }
+  }
+}

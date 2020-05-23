@@ -1,0 +1,15 @@
+.about-page {
+  &.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #464b80;
+  }
+  .wrapper {
+    max-width: 900px;
+  min-height: 0;
+  }
+  * {
+    color: #fff;
+  }
+}

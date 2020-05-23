@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/app/app';
+import { BrowserRouter } from 'react-router-dom';
+import App from './components/app';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+import './index.scss';
+
+ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
