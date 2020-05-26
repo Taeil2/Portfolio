@@ -16,23 +16,50 @@ export default class Work extends React.Component {
     skills: ['development'],
   },
   {
-    name: 'Placeholder Project',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    name: 'Bookmarks App',
+    description: 'Organize your bookmarks with this bookmarks app. This app grew out of a desire to organize my bookmarks in a visual layout.',
     url: 'https://www.google.com',
-    github: 'https://github.com/Taeil2/thinkful-portfolio',
+    github: '',
     image: 'https://via.placeholder.com/500x300',
     technologies: ['html', 'css', 'js'],
     skills: ['ux', 'development'],
-  },/*
+  },
   {
-    name: 'Placeholder Project',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    url: 'https://www.google.com',
-    github: 'https://github.com/Taeil2/thinkful-portfolio',
+    name: 'Linescape',
+    description: 'The Kayak of sailing shipping schedules. View schedules, vessel and port information, or use the API and data feeds for your own application.',
+    url: 'https://www.linescape.com/',
+    github: '',
+    image: 'https://via.placeholder.com/500x300',
+    technologies: ['angular', 'asp.net'],
+    skills: ['ux', 'development'],
+  },
+  {
+    name: 'Blue Cross Blue Shield BlueResource',
+    description: 'A health and wellness platform that allows HR employees to browse, download, and distribute documents for the betterment of their company’s employees.',
+    url: 'https://blueresourceil.com/',
+    github: '',
     image: 'https://via.placeholder.com/500x300',
     technologies: ['html', 'css', 'js'],
     skills: ['ux', 'development'],
-  }*/
+  },
+  {
+    name: 'Lincoln Hall + Schubas Tavern',
+    description: 'The website for two popular music venues in Chicago: Schubas Tavern and Lincoln Hall.',
+    url: 'http://www.lh-st.com/',
+    github: '',
+    image: 'https://via.placeholder.com/500x300',
+    technologies: ['html', 'css', 'js'],
+    skills: ['ux', 'development'],
+  },
+  {
+    name: 'American Board of Preventive Medicine',
+    description: 'The certifying medical board for three specialties and four subspecialties, including Public Health and General Preventive Medicine and Clinical Informatics. Physicians can apply for certification or view their certification status.',
+    url: 'https://www.theabpm.org/',
+    github: '',
+    image: 'https://via.placeholder.com/500x300',
+    technologies: ['html', 'css', 'js'],
+    skills: ['ux', 'development'],
+  },
   ];
 
   animateWork() {
@@ -67,6 +94,10 @@ export default class Work extends React.Component {
       <div className="work-page background">
         <div className="wrapper">
           {projects}
+          <div>
+            <button>Other</button>
+            <button>School Projects</button>
+          </div>
         </div>
       </div>
     );

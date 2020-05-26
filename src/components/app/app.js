@@ -9,6 +9,7 @@ import About from './../pages/about/about';
 import Work from './../pages/work/work';
 import Skills from './../pages/skills/skills';
 import Contact from './../pages/contact/contact';
+import Attribution from './../pages/attribution/attribution';
 
 function App({ location }) {
   return (
@@ -23,6 +24,7 @@ function App({ location }) {
                 <Route path='/skills' component={Skills} />
                 <Route path='/about' component={About} />
                 <Route path='/contact' component={Contact} />
+                <Route path='/attribution' component={Attribution} />
                 <Route component={Home} />
               </Switch>
             </CSSTransition>

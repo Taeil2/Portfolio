@@ -22,7 +22,7 @@ export default class Contact extends React.Component {
       <div className="contact-page background">
         <div className="wrapper">
           <article>
-            <h4>Send me a message or email me at taeil2@gmail.com</h4>
+            <p>Send me a message or email me at taeil2@gmail.com</p>
             <form onSubmit={e => this.handleSubmit(e)}>
               <div className="form-row">
                 <div className="form-group">

@@ -1,6 +1,7 @@
 import React from 'react';
 import Category from './category/category';
 import './skills.scss';
+import { NavLink } from 'react-router-dom';
 
 import htmlImage from './../../../images/tech-logos/html5-mark.svg';
 import cssImage from './../../../images/tech-logos/css3-mark.svg';
@@ -75,6 +76,7 @@ export default class Skills extends React.Component {
         <div className="wrapper">
           <div className="buttons-container">{sectionButtons}</div>
           {categories}
+          <div id="attribution"><NavLink to="/attribution" >Icons are from various creators from the Noun Project</NavLink></div>
         </div>
       </div>
     );

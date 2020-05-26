@@ -1,7 +1,8 @@
 /*------------------
    Variables
 ------------------*/
-
+$blue: #1E88E5;
+$dark-blue: #1976D2;
 
 /*------------------
    Imports
@@ -54,17 +55,22 @@ p, li {
 /*------------------
    Elements
 ------------------*/
+a {
+  text-decoration: none;
+  color: $blue;
+}
 button, .btn {
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
-  background: #1E88E5;
+  background: $blue;
   font-size: 16px;
   color: #fff;
   border-radius: 7px;
+  border: 0;
   cursor: pointer;
   &:hover {
-    background: #1976D2;
+    background: $dark-blue;
   }
 }
 
