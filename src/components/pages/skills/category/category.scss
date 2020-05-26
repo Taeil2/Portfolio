@@ -9,14 +9,6 @@ $tall-desktop-image-width: $desktop-image-width*0.9;
 $wide-desktop-image-width: $desktop-image-width*1.4;
 
 .skills-page {
-  &.background {
-    background: #fff;
-  }
-  .wrapper {
-    max-width: 700px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   h2 {
     text-align: center;
     margin-top: 1.5em;
@@ -24,14 +16,6 @@ $wide-desktop-image-width: $desktop-image-width*1.4;
     &.hidden {
       opacity: 0;
       margin-top: -20px;
-    }
-  }
-  .buttons-container {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    button {
-      margin: 0 8px;
     }
   }
 }

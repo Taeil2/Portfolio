@@ -27,17 +27,8 @@ function Nav() {
       <div className="nav2">
         <NavLink to="/contact" >
           <i className="fas fa-envelope"></i>
-          <div>Email</div>
+          <div>Contact</div>
         </NavLink>
-        {/* <div style="display: none;">
-          <div>
-            <input type="text" value="taeil2@gmail.com">
-            <button>Copy</button>
-          </div>
-          <div>
-            <button>Send an email</button>
-          </div>
-        </div> */}
         <a href="https://www.linkedin.com/in/taeil2" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin"></i>
           <div>LinkedIn</div>
