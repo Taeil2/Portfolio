@@ -13,7 +13,7 @@ export default class Project extends React.Component {
         <div className="content">
           <div className="image">
             <img src={this.props.data.image} alt={this.props.data.name + "Screenshot"} />
-            <div className={this.props.data.technologies.map(technology => technology).join(' ') + ' ' + this.props.data.skills.map(skill => skill).join(' ')}>
+            <div className={this.props.data.technologies.map(technology => technology).join(' ') + ' ' + this.props.data.design.map(design => design).join(' ')}>
               <div className="technologies">
                 <i className="fab fa-html5"></i>
                 <i className="fab fa-css3-alt"></i>

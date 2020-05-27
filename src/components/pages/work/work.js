@@ -3,62 +3,69 @@ import './work.scss';
 import Project from './project/project';
 
 import quizAppImage from './../../../images/projects/thinkful-quiz-app.png';
+// import bookmarksAppImage from '';
+import linescapeImage from './../../../images/projects/linescape.png';
+import bcbsImage from './../../../images/projects/blueresource.png';
+import lhstImage from './../../../images/projects/lh-st.png';
+import abpmImage from './../../../images/projects/abpm.png';
 
 export default class Work extends React.Component {
   // Description: What does the app do? Who is it for? Why did you build it?
-  projectsData = [{
+  projectsData = [
+  /*{
     name: 'Quiz App',
     description: 'Test your video game history knowledge with this video game history quiz. This was a quick multiple choice quiz app written for my Thinkful course to demonstrate practice of semantic HTML, CSS, JavaScript, and jQuery.',
     url: 'https://thinkful-ei-orka.github.io/Quiz-App_Taeil-Yousef/',
     github: 'https://github.com/thinkful-ei-orka/Quiz-App_Taeil-Yousef',
     image: quizAppImage,
     technologies: ['html', 'css', 'jquery'],
-    skills: ['development'],
+    design: [''],
   },
+  */
   {
     name: 'Bookmarks App',
-    description: 'Organize your bookmarks with this bookmarks app. This app grew out of a desire to organize my bookmarks in a visual layout.',
+    description: "This project was born out of a desire to organize my bookmarks in a visual layout and is my Thinkful Bootcamp final project. It draws inspiration from Google Chrome's new tab screen as well as the iOS home screen. I currently only have a demo for public use, but might release it online or on the Chrome store.",
     url: 'https://www.google.com',
     github: '',
     image: 'https://via.placeholder.com/500x300',
-    technologies: ['html', 'css', 'js'],
-    skills: ['ux', 'development'],
+    technologies: ['html', 'css', 'js', 'react'],
+    design: ['wireframes'],
   },
   {
     name: 'Linescape',
-    description: 'The Kayak of sailing shipping schedules. View schedules, vessel and port information, or use the API and data feeds for your own application.',
+    description: "Linescape helps you find ocean sailing schedules to ship goods overseas. It's like a flight search engine, but for container shipping vessels. View sailing schedules, vessel data, or port information, or use the API and data feeds for your own application.",
     url: 'https://www.linescape.com/',
     github: '',
-    image: 'https://via.placeholder.com/500x300',
-    technologies: ['angular', 'asp.net'],
-    skills: ['ux', 'development'],
+    image: linescapeImage,
+    technologies: ['html', 'css', 'js', 'angular', 'asp.net'],
+    design: ['competitive-analysis', 'wireframes'],
   },
   {
     name: 'Blue Cross Blue Shield BlueResource',
-    description: 'A health and wellness platform that allows HR employees to browse, download, and distribute documents for the betterment of their company’s employees.',
+    description: 'BlueResource is a BCBS product designed for companies to navigate and distribute health and wellness documents. Documents are sorted by category and purpose, such as stress management and heart health. The site also includes health campaigns and special documents such as a yearly calendar.',
     url: 'https://blueresourceil.com/',
     github: '',
-    image: 'https://via.placeholder.com/500x300',
-    technologies: ['html', 'css', 'js'],
-    skills: ['ux', 'development'],
+    image: bcbsImage,
+    technologies: ['html', 'css', 'js', 'asp.net'],
+    design: ['user-research', 'user-interviews', 'surveys', 'information-architecture', 'wireframes', 'prototypes'],
   },
   {
     name: 'Lincoln Hall + Schubas Tavern',
-    description: 'The website for two popular music venues in Chicago: Schubas Tavern and Lincoln Hall.',
+    description: 'Lincoln Hall and Schubas Tavern are two quality music venues in Chicago. This site combines the events from the two venues into a single list. It was designed for the optimal fan experience and simple owner management.',
     url: 'http://www.lh-st.com/',
     github: '',
-    image: 'https://via.placeholder.com/500x300',
-    technologies: ['html', 'css', 'js'],
-    skills: ['ux', 'development'],
+    image: lhstImage,
+    technologies: ['html', 'css', 'js', 'jquery', 'wordpress', 'asp.net'],
+    design: ['wireframes'],
   },
   {
     name: 'American Board of Preventive Medicine',
-    description: 'The certifying medical board for three specialties and four subspecialties, including Public Health and General Preventive Medicine and Clinical Informatics. Physicians can apply for certification or view their certification status.',
+    description: 'The American Board of Preventive Medicine is the certifying medical board for three specialities and four subspecialties. The website explains all there is to know about the Board and also provides on online application to get board certified. The Board reviews, manages, and approves applications online.',
     url: 'https://www.theabpm.org/',
     github: '',
-    image: 'https://via.placeholder.com/500x300',
-    technologies: ['html', 'css', 'js'],
-    skills: ['ux', 'development'],
+    image: abpmImage,
+    technologies: ['html', 'css', 'js', 'wordpress', 'asp.net'],
+    design: ['personas', 'user research', 'wireframes'],
   },
   ];
 
