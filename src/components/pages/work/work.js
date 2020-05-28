@@ -2,7 +2,7 @@ import React from 'react';
 import './work.scss';
 import Project from './project/project';
 
-import quizAppImage from './../../../images/projects/thinkful-quiz-app.png';
+// import quizAppImage from './../../../images/projects/thinkful-quiz-app.png';
 // import bookmarksAppImage from '';
 import linescapeImage from './../../../images/projects/linescape.png';
 import bcbsImage from './../../../images/projects/blueresource.png';
@@ -51,7 +51,7 @@ export default class Work extends React.Component {
   },
   {
     name: 'Lincoln Hall + Schubas Tavern',
-    description: 'Lincoln Hall and Schubas Tavern are two quality music venues in Chicago. This site combines the events from the two venues into a single list. It was designed for the optimal fan experience and simple owner management.',
+    description: 'Lincoln Hall and Schubas Tavern are two quality music venues in Chicago. This site combines the events from the two venues into a single list. It was designed for the best fan experience and simple owner management.',
     url: 'http://www.lh-st.com/',
     github: '',
     image: lhstImage,
@@ -60,7 +60,7 @@ export default class Work extends React.Component {
   },
   {
     name: 'American Board of Preventive Medicine',
-    description: 'The American Board of Preventive Medicine is the certifying medical board for three specialities and four subspecialties. The website explains all there is to know about the Board and also provides on online application to get board certified. The Board reviews, manages, and approves applications online.',
+    description: 'The American Board of Preventive Medicine is the certifying medical board for three specialities and four subspecialties. The website explains all there is to know about the Board and provides an online application to get board certified. The Board reviews, manages, and approves applications online.',
     url: 'https://www.theabpm.org/',
     github: '',
     image: abpmImage,
