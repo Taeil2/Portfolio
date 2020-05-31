@@ -13,6 +13,11 @@ export default class Project extends React.Component {
     });
 
     let designImages = [];
+    this.props.data.design.forEach(design => {
+      let imageVar = LogosIcons[design + "Image"];
+
+      designImages.push(<Tippy content={design} placement="bottom"><img src={imageVar} alt={design} className="tooltip"></img></Tippy>);
+    });
     // this.props.data.design.map(design => design).join(' ')
 
     let githubLink = '';
@@ -21,7 +26,7 @@ export default class Project extends React.Component {
     }
     let wireframeLink = '';
     if (this.props.data.wireframes.length > 0) {
-      wireframeLink = <a href={this.props.data.wireframes} className="wireframe-link"><img src={LogosIcons.whimsicalImage} /></a>;
+      wireframeLink = <a href={this.props.data.wireframes} className="wireframe-link"><img src={LogosIcons.whimsicalImage} alt="Wireframe Icon" /></a>;
     }
 
     return (

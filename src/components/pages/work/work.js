@@ -41,7 +41,7 @@ export default class Work extends React.Component {
     wireframes: '',
     image: linescapeImage,
     technologies: ['html', 'css', 'javascript', 'angular', 'aspnet'],
-    design: ['competitive-analysis', 'wireframes'],
+    design: ['competitiveAnalysis', 'wireframes'],
   },
   {
     name: 'Blue Cross Blue Shield BlueResource',
@@ -51,7 +51,7 @@ export default class Work extends React.Component {
     wireframes: '',
     image: bcbsImage,
     technologies: ['html', 'css', 'javascript', 'aspnet'],
-    design: ['user-research', 'user-interviews', 'surveys', 'information-architecture', 'wireframes', 'prototypes'],
+    design: ['userResearch', 'userInterviews', 'surveys', 'informationArchitecture', 'wireframes', 'prototypes'],
   },
   {
     name: 'Lincoln Hall + Schubas Tavern',
@@ -71,7 +71,7 @@ export default class Work extends React.Component {
     wireframes: '',
     image: abpmImage,
     technologies: ['html', 'css', 'javascript', 'wordpress', 'aspnet'],
-    design: ['personas', 'user research', 'wireframes'],
+    design: ['personas', 'userResearch', 'wireframes'],
   },
   ];
 

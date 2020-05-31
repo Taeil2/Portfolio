@@ -18,6 +18,20 @@
   h1 {
     font-family: 'Lato', cursive;
     font-weight: 300;
+    line-height: 1.4em;
+    strong {
+      color: #14bd29 !important;
+    }
+    .underline {
+      display: inline-block;
+      border-bottom: 1px solid white;
+    }
+    .ux-designer {
+      color: #ffbc00;
+    }
+    .developer {
+      color: #19a0ff;
+    }
   }
   .intro * {
     color: #fff;
@@ -26,9 +40,9 @@
 }
 #animation {
   width: 400px;
-  height: 400px;
+  height: 200px;
   margin: 0 auto;
-  margin-left: 50px;
+  text-align: center;
 }
 @media (min-width: 800px) {
   .home-page {
@@ -39,6 +53,9 @@
     }
     .intro {
       text-align: left;
+    }
+    #animation {
+      margin-left: 50px;
     }
   }
 }
