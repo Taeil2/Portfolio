@@ -2,7 +2,7 @@ import htmlImage from './../images/tech-logos/html5-mark.svg';
 import cssImage from './../images/tech-logos/css3-mark.svg';
 import sassImage from './../images/tech-logos/sass-circle.svg';
 import bootstrapImage from './../images/tech-logos/bootstrap.svg';
-import javascriptImage from './../images/tech-logos/javascript-small.png';
+import javascriptImage from './../images/tech-logos/javascript.svg';
 import jqueryImage from './../images/tech-logos/jquery.svg';
 import reactImage from './../images/tech-logos/react.svg';
 import angularImage from './../images/tech-logos/angular.svg';
@@ -12,6 +12,7 @@ import webpackImage from './../images/tech-logos/webpack-noborder.svg';
 import githubImage from './../images/tech-logos/github.svg';
 import wordpressImage from './../images/tech-logos/wordpress.svg';
 import phpImage from './../images/tech-logos/php.svg';
+import aspnetImage from './../images/tech-logos/aspnet.svg'
 
 import valuePropositionImage from './../images/design-icons/value-proposition.svg';
 import competitiveAnalysisImage from './../images/design-icons/competitive-analysis.svg';
@@ -30,8 +31,10 @@ import figmaImage from './../images/design-icons/figma.svg';
 import invisionImage from './../images/design-icons/invision.svg';
 import photoshopImage from './../images/design-icons/photoshop.svg';
 import illustratorImage from './../images/design-icons/illustrator.svg';
+import whimsicalImage from './../images/design-icons/whimsical.png';
 
 export default {
-  htmlImage, cssImage, sassImage, bootstrapImage, javascriptImage, jqueryImage, reactImage, angularImage, nodejsImage, npmImage, webpackImage, githubImage, wordpressImage, phpImage,
-  valuePropositionImage, competitiveAnalysisImage, personasImage, userJourneysImage, userResearchImage, userInterviewsImage, surveysImage, quantitativeAndQualitativeAnalysisImage, informationArchitectureImage, wireframesImage, prototypesImage, designSystemsImage, sketchImage, figmaImage, invisionImage, photoshopImage, illustratorImage
+  htmlImage, cssImage, sassImage, bootstrapImage, javascriptImage, jqueryImage, reactImage, angularImage, nodejsImage, npmImage, webpackImage, githubImage, wordpressImage, phpImage, aspnetImage,
+
+  valuePropositionImage, competitiveAnalysisImage, personasImage, userJourneysImage, userResearchImage, userInterviewsImage, surveysImage, quantitativeAndQualitativeAnalysisImage, informationArchitectureImage, wireframesImage, prototypesImage, designSystemsImage, sketchImage, figmaImage, invisionImage, photoshopImage, illustratorImage, whimsicalImage
 };

@@ -9,15 +9,38 @@
       width: 100%;
     }
   }
+  .tech-and-design {
+    margin-top: 7px;
+    .technologies, .design {
+      display: flex;
+    }
+    img {
+      max-height: 30px;
+      max-width: 35px;
+      // filter: grayscale(1) brightness(1.3);
+      filter: grayscale(0.3) brightness(1.3);
+    }
+    .technologies img {
+      margin-right: 5px;
+    }
+    .design img {
+      margin-left: 5px;
+    }
+  }
   .description {
     margin: 0 auto;
     text-align: center;
   }
-  .github-link {
+  .github-link, .wireframe-link {
     display: inline-block;
     vertical-align: top;
     margin-left: 15px;
+  }
+  .github-link {
     color: #fff;
+  }
+  .wireframe-link img {
+    height: 40px;
   }
   .fa-github {
     font-size: 38px;
@@ -36,10 +59,6 @@
     opacity: 0;
     margin-top: -50px;
     padding-bottom: 50px;
-  }
-  .technologies img {
-    max-height: 30px;
-    filter: grayscale(1) brightness(1.3);
   }
   /*
   .technologies i {

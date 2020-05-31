@@ -13,7 +13,7 @@ function init() {
   scene = new three.Scene();
 
   geometry = new three.BoxGeometry( 0.4, 0.4, 0.4 );
-  material = new three.MeshNormalMaterial();
+  material = new three.MeshPhongMaterial({color: 0xB7513C, flatShading: true });
 
   // geometry = new three.IcosahedronGeometry( 1, 0 );
   // material = new three.MeshDistanceMaterial();
@@ -21,9 +21,9 @@ function init() {
   mesh = new three.Mesh( geometry, material );
   scene.add( mesh );
 
-  renderer = new three.WebGLRenderer( { antialias: true } );
+  renderer = new three.WebGLRenderer( { alpha: true, antialias: true } );
   renderer.setSize( container.offsetWidth, container.offsetHeight );
-  renderer.setClearColor( 0x212121 );
+  // renderer.setClearColor( 0x212121 );
   container.appendChild( renderer.domElement );
 }
 

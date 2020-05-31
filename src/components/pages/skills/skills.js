@@ -10,7 +10,7 @@ export default class Skills extends React.Component {
   skills = {
     Development: {
       Web: [['HTML', LogosIcons.htmlImage, 'tall'], ['CSS', LogosIcons.cssImage, 'tall'], ['SASS', LogosIcons.sassImage, 'square'], ['Bootstrap', LogosIcons.bootstrapImage, 'square']],
-      JavaScript: [['JavaScript', LogosIcons.javascriptImage, 'tall'], ['jQuery', LogosIcons.jqueryImage, 'square'], ['React', LogosIcons.reactImage, 'square'], ['Angular', LogosIcons.angularImage, 'tall'], ['Node.js', LogosIcons.nodejsImage, 'square'], ['npm', LogosIcons.npmImage, 'wide'], ['Webpack', LogosIcons.webpackImage, 'square']],
+      JavaScript: [['JavaScript', LogosIcons.javascriptImage, 'square'], ['jQuery', LogosIcons.jqueryImage, 'square'], ['React', LogosIcons.reactImage, 'square'], ['Angular', LogosIcons.angularImage, 'tall'], ['Node.js', LogosIcons.nodejsImage, 'square'], ['npm', LogosIcons.npmImage, 'wide'], ['Webpack', LogosIcons.webpackImage, 'square']],
       Other: [['GitHub', LogosIcons.githubImage, 'square'], ['WordPress', LogosIcons.wordpressImage, 'square'], ['php', LogosIcons.phpImage, 'wide']]
     },
     Design: {

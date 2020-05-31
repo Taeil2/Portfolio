@@ -5,5 +5,6 @@ import App from './components/app';
 
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 import './index.scss';
+import 'tippy.js/dist/tippy.css';
 
 ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
