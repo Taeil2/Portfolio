@@ -3,20 +3,58 @@ import './project.scss';
 import LogosIcons from './../../../../other/logos-icons';
 import Tippy from '@tippyjs/react';
 
+const dictionary = {
+  html: 'HTML',
+  css: 'CSS',
+  sass: 'SASS',
+  bootstrap: 'Bootstrap',
+  javascript: 'JavaScript',
+  jquery: 'jQuery',
+  react: 'React',
+  angular: 'Angular',
+  nodejs: 'Node.js',
+  npm: 'npm',
+  webpack: 'Webpack',
+  github: 'GitHub',
+  wordpress: 'WordPress',
+  php: 'php',
+  aspnet: 'ASP.NET',
+
+  valueProposition: 'Value Proposition',
+  competitiveAnalysis: 'Competitive Analysis',
+  personas: 'Personas',
+  userJourneys: 'User Journeys',
+  userResearch: 'User Research',
+  userInterviews: 'User Interviews',
+  surveys: 'Surveys',
+  quantitativeAndQualitativeAnalysis: 'Quantitative and Qualitative Analysis',
+  informationArchitecture: 'Information Architecture', wireframes: 'Wireframes',
+  prototypes: 'Prototypes',
+  designSystems: 'Design Systems',
+  sketch: 'Sketch',
+  figma: 'Figma',
+  invision: 'InVision',
+  photoshop: 'Photoshop',
+  illustrator: 'Illustrator',
+  whimsical: 'Whimsical',
+};
+
+let test = 'html';
+
 export default class Project extends React.Component {
   render() {
     let technologyImages = [];
     this.props.data.technologies.forEach(technology => {
       let imageVar = LogosIcons[technology + "Image"];
 
-      technologyImages.push(<Tippy content={technology} placement="bottom"><img src={imageVar} alt={technology} className="tooltip"></img></Tippy>);
+      technologyImages.push(<Tippy content={dictionary[technology]} placement="bottom"><img src={imageVar} alt={dictionary[technology]} className="tooltip"></img></Tippy>);
     });
 
     let designImages = [];
     this.props.data.design.forEach(design => {
-      let imageVar = LogosIcons[design + "Image"];
+      let imageVar = LogosIcons[design + "ImageWhite"];
 
-      designImages.push(<Tippy content={design} placement="bottom"><img src={imageVar} alt={design} className="tooltip"></img></Tippy>);
+      designImages.push(<Tippy content={dictionary[design]} placement="bottom"><img src={imageVar} alt={dictionary[design]} className="tooltip"></img></Tippy>);
     });
     // this.props.data.design.map(design => design).join(' ')
 

@@ -107,10 +107,10 @@ export default class Work extends React.Component {
       <div className="work-page background">
         <div className="wrapper">
           {projects}
-          <div>
+          {/* <div>
             <button>Other</button>
             <button>School Projects</button>
-          </div>
+          </div> */}
         </div>
       </div>
     );

@@ -12,13 +12,10 @@
     }
   }
   .tech-and-design {
-    position: absolute;
-    bottom: 0;
-    padding: 7px 5px;
+    padding: 8px 5px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background: rgba(170, 170, 170, 0.7);
     .technologies, .design {
       display: flex;
     }
@@ -28,7 +25,7 @@
     }
     .technologies img {
       margin-right: 5px;
-      filter: grayscale(0.3) brightness(1.3);
+      filter: grayscale(0.1) brightness(1.2);
     }
     .design img {
       margin-left: 8px;

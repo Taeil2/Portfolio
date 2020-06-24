@@ -33,8 +33,23 @@ import photoshopImage from './../images/design-icons/photoshop.svg';
 import illustratorImage from './../images/design-icons/illustrator.svg';
 import whimsicalImage from './../images/design-icons/whimsical.png';
 
+import valuePropositionImageWhite from './../images/design-icons/white/value-proposition.svg';
+import competitiveAnalysisImageWhite from './../images/design-icons/white/competitive-analysis.svg';
+import personasImageWhite from './../images/design-icons/white/persona.svg';
+import userJourneysImageWhite from './../images/design-icons/white/user-journey.svg';
+import userResearchImageWhite from './../images/design-icons/white/user-research.svg';
+import userInterviewsImageWhite from './../images/design-icons/white/user-interviews.svg';
+import surveysImageWhite from './../images/design-icons/white/surveys.svg';
+import quantitativeAndQualitativeAnalysisImageWhite from './../images/design-icons/white/quantitative-and-qualitative-analysis.svg';
+import informationArchitectureImageWhite from './../images/design-icons/white/information-architecture.svg';
+import wireframesImageWhite from './../images/design-icons/white/wireframe.svg';
+import prototypesImageWhite from './../images/design-icons/white/prototypes.svg';
+import designSystemsImageWhite from './../images/design-icons/white/design-systems.svg';
+
 export default {
   htmlImage, cssImage, sassImage, bootstrapImage, javascriptImage, jqueryImage, reactImage, angularImage, nodejsImage, npmImage, webpackImage, githubImage, wordpressImage, phpImage, aspnetImage,
 
-  valuePropositionImage, competitiveAnalysisImage, personasImage, userJourneysImage, userResearchImage, userInterviewsImage, surveysImage, quantitativeAndQualitativeAnalysisImage, informationArchitectureImage, wireframesImage, prototypesImage, designSystemsImage, sketchImage, figmaImage, invisionImage, photoshopImage, illustratorImage, whimsicalImage
+  valuePropositionImage, competitiveAnalysisImage, personasImage, userJourneysImage, userResearchImage, userInterviewsImage, surveysImage, quantitativeAndQualitativeAnalysisImage, informationArchitectureImage, wireframesImage, prototypesImage, designSystemsImage, sketchImage, figmaImage, invisionImage, photoshopImage, illustratorImage, whimsicalImage,
+
+  valuePropositionImageWhite, competitiveAnalysisImageWhite, personasImageWhite, userJourneysImageWhite, userResearchImageWhite, userInterviewsImageWhite, surveysImageWhite, quantitativeAndQualitativeAnalysisImageWhite, informationArchitectureImageWhite, wireframesImageWhite, prototypesImageWhite, designSystemsImageWhite
 };
