@@ -16,12 +16,19 @@ function init() {
   frontSpot.position.set(-150, 350, 1000);
   scene.add(frontSpot);
 
+  // geometry = new THREE.OctahedronGeometry( 0.5, 0 );
   geometry = new THREE.DodecahedronGeometry( 0.5, 0 );
+  // geometry = new THREE.IcosahedronGeometry( 0.5, 0 );
+
   let orange = 0xFFA726;
   let yellow = 0xFFEB3B;
   let red = 0xE65100;
-  // 0xFFA726, 0xFFEB3B, 0xE64A19, 0x5E35B1, 0x0D47A1
-  let colors = [orange, yellow, red, orange, yellow, red, orange, yellow, red, orange, yellow, red];
+  let blue = 0x3381FF;
+  let purple = 0x8B44EE;
+  let green = 0x3381FF;
+  // let colors = [orange, yellow, red, orange, yellow, red, orange, yellow, red, orange, yellow, red];
+  let colors = [orange, yellow, red, blue, purple, green, orange, yellow, red, blue, purple, green];
+  // let colors = [red, blue, purple, orange, 0x000000, 0x000000, purple, 0xffffff, yellow, green, blue, red];
   let j = -1;
   for ( var i = 0; i < geometry.faces.length; i++ ) {
     if (i % 3 === 0) {
@@ -44,8 +51,8 @@ function init() {
 function animate() {
   requestAnimationFrame( animate );
 
-  mesh.rotation.x += 0.01;
-  mesh.rotation.y += 0.015;
+  mesh.rotation.x += 0.007;
+  mesh.rotation.y += 0.005;
 
   renderer.render( scene, camera );
 }

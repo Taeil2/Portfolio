@@ -1,11 +1,14 @@
+$orange: #FFA726;
+$blue: #42A5F5;
+$green: #4CAF50;
+
 .home-page {
   &.background {
-    background-color: #1f1f1f;
+    background-color: #212121;
     // background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
     // background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
     // background-image: url("https://www.transparenttextures.com/patterns/noise-pattern-with-subtle-cross-lines.png");
-    background-image: url("https://www.transparenttextures.com/patterns/woven.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    // background-image: url("https://www.transparenttextures.com/patterns/woven.png");
   }
   .wrapper {
     display: flex;
@@ -18,20 +21,32 @@
   h1 {
     font-family: 'Lato', cursive;
     font-weight: 300;
-    line-height: 1.4em;
-    strong {
-      color: #14bd29 !important;
+    line-height: 1.7em;
+    font-size: 56px;
+    margin-bottom: 0;
+    .name {
+      color: $green !important;
+      font-size: 64px;
     }
+  }
+  h2 {
+    font-size: 48px;
+    margin-top: 0;
+    line-height: 1.6em;
     .underline {
       display: inline-block;
-      border-bottom: 1px solid white;
+      // border-bottom: 1px solid white;
     }
     .ux-designer {
-      color: #ffbc00;
+      color: $orange;
     }
     .developer {
-      color: #19a0ff;
+      color: $blue;
     }
+  }
+  .intro h3 {
+    font-size: 28px;
+    color: #E0E0E0;
   }
   .intro * {
     color: #fff;
@@ -39,8 +54,8 @@
   }
 }
 #animation {
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto;
   text-align: center;
 }
@@ -55,7 +70,7 @@
       text-align: left;
     }
     #animation {
-      margin-left: 50px;
+      // margin-left: 50px;
     }
   }
 }
