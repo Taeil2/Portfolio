@@ -28,8 +28,10 @@ export default class Contact extends React.Component {
       return;
     }
 
-    // fetch('https://taeil2-backend.herokuapp.com/contact', {
-    fetch('http://localhost:8000/contact', {
+    console.log('posting');
+
+    fetch('https://taeil2-backend.herokuapp.com/contact', {
+    // fetch('http://localhost:8000/contact', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

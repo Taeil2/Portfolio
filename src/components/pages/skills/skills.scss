@@ -16,16 +16,17 @@ $wide-desktop-image-width: $desktop-image-width*1.4;
   }
   .wrapper {
     max-width: 700px;
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 60px;
   }
   h2 {
     text-align: center;
-    margin-top: 1.5em;
-    margin-bottom: 0.25em;
+    margin-top: 50px;
+    margin-bottom: 30px;
     transition: all 200ms linear;
-    font-family: 'PT Sans Caption';
-    color: #777;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #333;
     &.hidden {
       opacity: 0;
       margin-top: -20px;
@@ -43,15 +44,21 @@ $wide-desktop-image-width: $desktop-image-width*1.4;
 }
 .skill-filter {
   background: none;
-  border-radius: 0;
+  border: 1px solid #1E88E5;
   font-weight: 600;
-  color: #8a8a8a;
+  color: #1E88E5;
+  &:first-of-type {
+    border-radius: 8px 0 0 8px;
+  }
+  &:last-of-type {
+    border-radius: 0 8px 8px 0;
+  }
   &:hover {
     background: rgb(245, 245, 245);
   }
   &.active {
-    color: #1E88E5;
-    border-bottom: 2px solid #1E88E5;
+    background: #1E88E5;
+    color: #fff
   }
   &:focus {
     outline: none;
@@ -68,9 +75,9 @@ $wide-desktop-image-width: $desktop-image-width*1.4;
   padding-left: 0;
 }
 .skill {
-  flex: 1 0 40%;
+  flex: 1 0 30%;
   text-align: center;
-  margin: 10px 0;
+  margin: 20px 0;
   transition: all 200ms linear;
   .image-container {
     max-width: $base-image-width;
@@ -91,7 +98,6 @@ $wide-desktop-image-width: $desktop-image-width*1.4;
     max-height: 100%;
   }
   .title {
-    font-size: 18px;
     margin-top: 0.5em;
   }
   &.hidden {

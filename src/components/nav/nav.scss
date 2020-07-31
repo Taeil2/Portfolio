@@ -1,9 +1,9 @@
 .nav1, .nav2 {
   position: fixed;
+  z-index: 10;
   width: 100%;
   background: #37474F;
   display: flex;
-  z-index: 1;
 }
 .nav1 a, .nav2 a {
   flex-grow: 1;
@@ -17,6 +17,8 @@
   bottom: 0;
 }
 nav {
+  position: relative;
+  z-index: 10;
   a {
     display: flex;
     align-items: center;
