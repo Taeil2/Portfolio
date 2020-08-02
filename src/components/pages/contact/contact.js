@@ -26,7 +26,8 @@ export default class Contact extends React.Component {
 
     if (data.name === '' || data.email === '' || data.message === '') {
       this.setState({
-        errorMessage: 'Please fill in all fields'
+        errorMessage: 'Please fill in all fields',
+        loading: false
       });
       return;
     }
@@ -86,8 +87,6 @@ export default class Contact extends React.Component {
 
   render() {
     let submitButton;
-
-    console.log(this.state);
 
     if (!this.state.loading) {
       submitButton = <button type="submit"><i className="far fa-paper-plane"></i> Send</button>

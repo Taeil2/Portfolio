@@ -15,6 +15,13 @@ export default class Category extends React.Component {
         </li>
       );
     });
+    skills.push(
+      <>
+        <li className="skill"></li>
+        <li className="skill"></li>
+        <li className="skill"></li>
+      </>
+    );
 
     return (
       <section>

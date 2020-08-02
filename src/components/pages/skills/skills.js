@@ -9,9 +9,13 @@ export default class Skills extends React.Component {
   // Each skill has a title, image, and image apsect ratio
   skills = {
     Development: {
-      Web: [['HTML', LogosIcons.htmlImage, 'tall'], ['CSS', LogosIcons.cssImage, 'tall'], ['SASS', LogosIcons.sassImage, 'square'], ['Bootstrap', LogosIcons.bootstrapImage, 'square']],
-      JavaScript: [['JavaScript', LogosIcons.javascriptImage, 'square'], ['jQuery', LogosIcons.jqueryImage, 'square'], ['React', LogosIcons.reactImage, 'square'], ['Angular', LogosIcons.angularImage, 'tall'], ['Node.js', LogosIcons.nodejsImage, 'square'], ['npm', LogosIcons.npmImage, 'wide'], ['Webpack', LogosIcons.webpackImage, 'square']],
+      'Front End': [['HTML', LogosIcons.htmlImage, 'tall'], ['CSS', LogosIcons.cssImage, 'tall'], ['SASS', LogosIcons.sassImage, 'square'], ['Bootstrap', LogosIcons.bootstrapImage, 'square'], ['JavaScript', LogosIcons.javascriptImage, 'square'], ['React', LogosIcons.reactImage, 'square'], ['Angular', LogosIcons.angularImage, 'tall'], ['jQuery', LogosIcons.jqueryImage, 'square']],
+      'Back End': [['Node.js', LogosIcons.nodejsImage, 'square'], ['npm', LogosIcons.npmImage, 'wide'], ['Express', LogosIcons.expressImage, 'square'], ['PostgreSQL', LogosIcons.postgresqlImage, 'square']],
       Other: [['GitHub', LogosIcons.githubImage, 'square'], ['WordPress', LogosIcons.wordpressImage, 'square'], ['php', LogosIcons.phpImage, 'wide']]
+      // Unused: [['npm', LogosIcons.npmImage, 'wide'], ['Webpack', LogosIcons.webpackImage, 'square']]
+      // Web: [['HTML', LogosIcons.htmlImage, 'tall'], ['CSS', LogosIcons.cssImage, 'tall'], ['SASS', LogosIcons.sassImage, 'square'], ['Bootstrap', LogosIcons.bootstrapImage, 'square']],
+      // JavaScript: [['JavaScript', LogosIcons.javascriptImage, 'square'], ['jQuery', LogosIcons.jqueryImage, 'square'], ['React', LogosIcons.reactImage, 'square'], ['Angular', LogosIcons.angularImage, 'tall'], ['Node.js', LogosIcons.nodejsImage, 'square'], ['npm', LogosIcons.npmImage, 'wide'], ['Webpack', LogosIcons.webpackImage, 'square']],
+      // Other: [['GitHub', LogosIcons.githubImage, 'square'], ['WordPress', LogosIcons.wordpressImage, 'square'], ['php', LogosIcons.phpImage, 'wide']]
     },
     Design: {
       Planning: [['Value Proposition', LogosIcons.valuePropositionImage, 'square'], ['Competitive Analysis', LogosIcons.competitiveAnalysisImage, 'square'], ['Personas', LogosIcons.personasImage, 'tall'], ['User Journeys', LogosIcons.userJourneysImage, 'square']],

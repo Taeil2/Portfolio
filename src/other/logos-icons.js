@@ -12,7 +12,10 @@ import webpackImage from './../images/tech-logos/webpack-noborder.svg';
 import githubImage from './../images/tech-logos/github.svg';
 import wordpressImage from './../images/tech-logos/wordpress.svg';
 import phpImage from './../images/tech-logos/php.svg';
-import aspnetImage from './../images/tech-logos/aspnet.svg'
+import aspnetImage from './../images/tech-logos/aspnet.svg';
+
+import expressImage from './../images/tech-logos/expressjs.svg';
+import postgresqlImage from './../images/tech-logos/postgresql.svg';
 
 import valuePropositionImage from './../images/design-icons/value-proposition.svg';
 import competitiveAnalysisImage from './../images/design-icons/competitive-analysis.svg';
@@ -48,6 +51,8 @@ import designSystemsImageWhite from './../images/design-icons/white/design-syste
 
 export default {
   htmlImage, cssImage, sassImage, bootstrapImage, javascriptImage, jqueryImage, reactImage, angularImage, nodejsImage, npmImage, webpackImage, githubImage, wordpressImage, phpImage, aspnetImage,
+
+  expressImage, postgresqlImage,
 
   valuePropositionImage, competitiveAnalysisImage, personasImage, userJourneysImage, userResearchImage, userInterviewsImage, surveysImage, quantitativeAndQualitativeAnalysisImage, informationArchitectureImage, wireframesImage, prototypesImage, designSystemsImage, sketchImage, figmaImage, invisionImage, photoshopImage, illustratorImage, whimsicalImage,
 

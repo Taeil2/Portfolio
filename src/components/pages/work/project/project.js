@@ -50,7 +50,8 @@ export default class Project extends React.Component {
 
     let designImages = [];
     this.props.data.design.forEach(design => {
-      let imageVar = LogosIcons[design + "ImageWhite"];
+      // let imageVar = LogosIcons[design + "ImageWhite"];
+      let imageVar = LogosIcons[design + "Image"];
 
       designImages.push(<Tippy content={dictionary[design]} placement="bottom"><img src={imageVar} alt={dictionary[design]} className="tooltip"></img></Tippy>);
     });

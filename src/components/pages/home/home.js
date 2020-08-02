@@ -1,7 +1,8 @@
 import React from 'react';
 import './home.scss';
 import { RoughNotation } from 'react-rough-notation';
-import animation from './animation';
+import { Link } from 'react-router-dom';
+// import animation from './animation';
 
 class Home extends React.Component {
   constructor(props) {
@@ -35,7 +36,7 @@ class Home extends React.Component {
     return (
       <div className="home-page background">
         <div className="wrapper">
-          <div>Left Content</div>
+          {/* <div><img src="http://via.placeholder.com/200x200"></img></div> */}
           <div className="intro">
             <h1>Hi, my name is <strong className="name">Taeil Kwak</strong></h1>
             <h2>
@@ -43,7 +44,8 @@ class Home extends React.Component {
               <br />and <RoughNotation type="underline" strokeWidth="5" padding="2" color="#42A5F5" show={this.state.showUnderline2}><span className="developer underline">software engineer</span></RoughNotation>
             </h2>
             <div>
-              <button>See my work</button><button>Contact me</button>
+              <Link to="/work" className="btn">See my work</Link>
+              <Link to="/contact" className="btn">Contact me</Link>
             </div>
             {/* <h3>I like to create enjoyable and useable experiences.</h3> */}
           </div>

@@ -51,13 +51,16 @@ $green: #4CAF50;
       color: $blue;
     }
   }
-  .intro h3 {
-    font-size: 28px;
-    color: #212121;
-  }
+  // .intro h3 {
+  //   font-size: 28px;
+  // }
   .intro * {
-    color: #212121;
+    color: #444;
     font-weight: 300;
+  }
+  .intro .btn {
+    color: #fff;
+    margin-right: 15px;
   }
 }
 #animation {
