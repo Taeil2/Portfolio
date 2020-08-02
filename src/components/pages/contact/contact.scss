@@ -30,6 +30,10 @@
       font-size: 18px;
       margin-right: 3px;
     }
+    .fa-spinner {
+      animation: fa-spin 2s linear infinite;
+      margin-right: 0;
+    }
   }
 
   .hidden {

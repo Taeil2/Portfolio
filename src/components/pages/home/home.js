@@ -12,11 +12,11 @@ class Home extends React.Component {
     }
   }
   componentDidMount() {
-    animation.init();
-    if (!animation.animationRun) { // object kept speeding up.
-      animation.animate();
-      animation.animationRun = true;
-    }
+    // animation.init();
+    // if (!animation.animationRun) { // object kept speeding up.
+    //   animation.animate();
+    //   animation.animationRun = true;
+    // }
 
     setTimeout(() => {
       this.setState({
@@ -35,17 +35,20 @@ class Home extends React.Component {
     return (
       <div className="home-page background">
         <div className="wrapper">
+          <div>Left Content</div>
           <div className="intro">
-            <h1>
-              Hi, my name is <strong className="name">Taeil Kwak</strong></h1>
-              <h2>
-                I am a <RoughNotation type="underline" strokeWidth="5" padding="2" color="#FFA726" show={this.state.showUnderline1}><span className="ux-designer underline">UI/UX designer</span></RoughNotation>
-                <br />and <RoughNotation type="underline" strokeWidth="5" padding="2" color="#42A5F5" show={this.state.showUnderline2}><span className="developer underline">software engineer</span></RoughNotation>
-              </h2>
-            <h3>I like to create enjoyable and useable experiences.</h3>
+            <h1>Hi, my name is <strong className="name">Taeil Kwak</strong></h1>
+            <h2>
+              I am a <RoughNotation type="underline" strokeWidth="5" padding="2" color="#FFA726" show={this.state.showUnderline1}><span className="ux-designer underline">UI/UX designer</span></RoughNotation>
+              <br />and <RoughNotation type="underline" strokeWidth="5" padding="2" color="#42A5F5" show={this.state.showUnderline2}><span className="developer underline">software engineer</span></RoughNotation>
+            </h2>
+            <div>
+              <button>See my work</button><button>Contact me</button>
+            </div>
+            {/* <h3>I like to create enjoyable and useable experiences.</h3> */}
           </div>
-          <div id="animation">
-          </div>
+          {/* <div id="animation">
+          </div> */}
         </div>
       </div>
     );

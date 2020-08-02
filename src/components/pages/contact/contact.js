@@ -10,10 +10,13 @@ export default class Contact extends React.Component {
     failureClass: 'hidden',
     formClass: '',
     errorMessage: '',
+    loading: false,
   }
 
   handleSubmit(e) {
     e.preventDefault();
+
+    this.setState({loading: true});
 
     let data = {
       name: this.state.name,
@@ -40,7 +43,7 @@ export default class Contact extends React.Component {
     })
     .then(res => {
       console.log(res)
-      if (res.status === 202) { // expecting a 250 response
+      if (res.status === 250) { // expecting a 250 response
         console.log('success');
         this.formSuccess();
       } else {
@@ -64,7 +67,8 @@ export default class Contact extends React.Component {
       message: '',
       successClass: ``,
       failureClass: 'hidden',
-      formClass: 'hidden'
+      formClass: 'hidden',
+      loading: false,
     })
   }
 
@@ -75,17 +79,28 @@ export default class Contact extends React.Component {
       message: '',
       successClass: 'hidden',
       failureClass: ``,
-      formClass: 'hidden'
+      formClass: 'hidden',
+      loading: false,
     })
   }
 
   render() {
+    let submitButton;
+
+    console.log(this.state);
+
+    if (!this.state.loading) {
+      submitButton = <button type="submit"><i className="far fa-paper-plane"></i> Send</button>
+    } else {
+      submitButton = <button type="submit"><i className="fas fa-spinner"></i></button>
+    }
+
     return (
       <div className="contact-page background">
         <div className="wrapper">
           <h1>Contact</h1>
           <form onSubmit={e => this.handleSubmit(e)} className={this.state.formClass}>
-            <p>Send me a message or email me at <a href="mailto:taeil2@gmail.com">taeil2@gmail.com</a></p>
+            {/* <p>Send me a message or email me at <a href="mailto:taeil2@gmail.com">taeil2@gmail.com</a></p> */}
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="name">Name</label>
@@ -101,7 +116,7 @@ export default class Contact extends React.Component {
               <textarea id="message" value={this.state.message} onChange={e => this.handleChange('message', e.target.value)}></textarea>
             </div>
             <div className="form-group">
-              <button type="submit"><i className="far fa-paper-plane"></i> Send</button>
+              {submitButton}
             </div>
             <div className="error-message">{this.state.errorMessage}</div>
           </form>
