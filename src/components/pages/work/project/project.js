@@ -19,6 +19,8 @@ const dictionary = {
   wordpress: 'WordPress',
   php: 'php',
   aspnet: 'ASP.NET',
+  postgresql: 'PostgreSQL',
+  express: 'Express',
 
   valueProposition: 'Value Proposition',
   competitiveAnalysis: 'Competitive Analysis',
