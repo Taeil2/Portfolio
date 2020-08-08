@@ -1,5 +1,4 @@
 import React from 'react';
-import './project.scss';
 import LogosIcons from './../../../../other/logos-icons';
 import Tippy from '@tippyjs/react';
 

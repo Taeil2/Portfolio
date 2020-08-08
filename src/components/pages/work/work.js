@@ -76,7 +76,7 @@ export default class Work extends React.Component {
 
   animateWork() {
     let projects = Array.from(document.querySelectorAll('.project'));
-    let offset = 400;
+    let offset = 150;
 
     // fade in first project
     setTimeout(function() {

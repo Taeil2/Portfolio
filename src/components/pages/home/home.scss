@@ -22,17 +22,18 @@ $green: #4CAF50;
   }
   h1 {
     // font-family: Mulish;
+    margin-top: 0;
     font-family: 'Open Sans';
     font-weight: 300;
     line-height: 1.7em;
-    font-size: 56px;
+    font-size: 54px;
     margin-bottom: 0;
     strong {
       font-weight: 600!important;
     }
     .name {
       color: $green !important;
-      font-size: 64px;
+      font-size: 1.2em;
     }
   }
   h2 {
@@ -58,6 +59,9 @@ $green: #4CAF50;
     color: #444;
     font-weight: 300;
   }
+  .intro .btn-container {
+    margin-top: 50px;
+  }
   .intro .btn {
     color: #fff;
     margin-right: 15px;
@@ -82,5 +86,52 @@ $green: #4CAF50;
     #animation {
       // margin-left: 50px;
     }
+  }
+}
+
+
+
+@media (max-width: 1023px) {
+  .home-page {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .home-page {
+    h1 {
+      .name {
+        display: block;
+      }
+    }
+    h2 {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (max-width: 399px) {
+  .home-page {
+    h1 {
+      font-size: 36px;
+      .name {
+        display: block;
+      }
+    }
+    h2 {
+      font-size: 26px;
+    }
+  }
+}
+
+@media (max-width: 349px) {
+  .btn {
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 }

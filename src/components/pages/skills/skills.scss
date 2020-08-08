@@ -80,7 +80,7 @@ $wide-desktop-image-width: $desktop-image-width*1.4;
 .skill {
   flex: 1 0 25%;
   text-align: center;
-  margin: 10px 15px;
+  margin: 15px 15px;
   transition: all 200ms linear;
   .image-container {
     max-width: $base-image-width;
@@ -112,7 +112,7 @@ $wide-desktop-image-width: $desktop-image-width*1.4;
 @media (min-width: 600px) {
   .skill {
     flex: 1 0 17%;
-    margin: 10px 25px;
+    margin: 20px 25px;
     .image-container {
       max-width: $desktop-image-width;
       height: $desktop-image-height;

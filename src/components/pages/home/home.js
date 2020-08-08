@@ -43,7 +43,7 @@ class Home extends React.Component {
               I am a <RoughNotation type="underline" strokeWidth="5" padding="2" color="#FFA726" show={this.state.showUnderline1}><span className="ux-designer underline">UI/UX designer</span></RoughNotation>
               <br />and <RoughNotation type="underline" strokeWidth="5" padding="2" color="#42A5F5" show={this.state.showUnderline2}><span className="developer underline">software engineer</span></RoughNotation>
             </h2>
-            <div>
+            <div class="btn-container">
               <Link to="/work" className="btn">See my work</Link>
               <Link to="/contact" className="btn">Contact me</Link>
             </div>
