@@ -38,8 +38,10 @@ $wide-desktop-image-width: $desktop-image-width*1.4;
     z-index: 1;
     text-align: center;
     margin-bottom: 50px;
+    font-size: 0;
     button {
       // margin: 0 8px;
+      margin: 0;
     }
   }
 }

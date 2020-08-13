@@ -9,6 +9,11 @@ import lhstImage from './../../../images/projects/lh-st.png';
 import abpmImage from './../../../images/projects/abpm.png';
 
 export default class Work extends React.Component {
+  state = {
+    windowScroll: false,
+    mainScroll: false,
+  }
+
   // Description: What does the app do? Who is it for? Why did you build it?
   projectsData = [
     {
@@ -78,15 +83,21 @@ export default class Work extends React.Component {
     let projects = Array.from(document.querySelectorAll('.project'));
     let offset = 150;
 
-    // fade in first project
-    setTimeout(function() {
-      projects[0].classList.remove('hidden');
-    }, 250);
+    // fade in projects that are on screen
+    let main = document.getElementsByTagName('main')[0];
+    // let bottomPos = main.scrollTop + window.innerHeight;
+    let bottomPos = main.scrollTop + window.innerHeight;
+    projects.forEach((project) => {
+      if (project.offsetTop < bottomPos) {
+        setTimeout(function() {
+          project.classList.remove('hidden');
+        }, 250);
+      }
+    });
 
     // fade in projects on scroll
-    let main = document.getElementsByTagName('main')[0];
-    main.addEventListener('scroll', function() {
-      let bottomPos = main.scrollTop + window.innerHeight;
+    window.addEventListener('scroll', function() {
+      bottomPos = window.scrollY + window.innerHeight;
 
       projects.forEach((project) => {
         if (project.offsetTop < bottomPos - offset) {
@@ -95,6 +106,12 @@ export default class Work extends React.Component {
       });
     });
   }
+
+  componentDidMount() {
+    // window.scrollBy(0,1);
+    this.animateWork();
+  }
+
 
   render() {
     let projects = [];
@@ -115,7 +132,7 @@ export default class Work extends React.Component {
     );
   }
 
-  componentDidUpdate() {
-    this.animateWork();
-  }
+  // componentDidUpdate() {
+  //   this.animateWork();
+  // }
 }

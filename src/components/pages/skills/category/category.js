@@ -14,11 +14,12 @@ export default class Category extends React.Component {
         </li>
       );
     });
+
     skills.push(
       <>
-        <li className="skill"></li>
-        <li className="skill"></li>
-        <li className="skill"></li>
+        <li className="skill" key="empty-1"></li>
+        <li className="skill" key="empty-2"></li>
+        <li className="skill" key="empty-3"></li>
       </>
     );
 

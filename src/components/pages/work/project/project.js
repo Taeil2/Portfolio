@@ -43,18 +43,18 @@ const dictionary = {
 export default class Project extends React.Component {
   render() {
     let technologyImages = [];
-    this.props.data.technologies.forEach(technology => {
+    this.props.data.technologies.forEach((technology, i) => {
       let imageVar = LogosIcons[technology + "Image"];
 
-      technologyImages.push(<Tippy content={dictionary[technology]} placement="bottom"><img src={imageVar} alt={dictionary[technology]} className="tooltip"></img></Tippy>);
+      technologyImages.push(<Tippy key={i} content={dictionary[technology]} placement="bottom"><img src={imageVar} alt={dictionary[technology]} className="tooltip"></img></Tippy>);
     });
 
     let designImages = [];
-    this.props.data.design.forEach(design => {
+    this.props.data.design.forEach((design, i) => {
       // let imageVar = LogosIcons[design + "ImageWhite"];
       let imageVar = LogosIcons[design + "Image"];
 
-      designImages.push(<Tippy content={dictionary[design]} placement="bottom"><img src={imageVar} alt={dictionary[design]} className="tooltip"></img></Tippy>);
+      designImages.push(<Tippy key={i} content={dictionary[design]} placement="bottom"><img src={imageVar} alt={dictionary[design]} className="tooltip"></img></Tippy>);
     });
     // this.props.data.design.map(design => design).join(' ')
 
