@@ -7,6 +7,7 @@ import linescapeImage from './../../../images/projects/linescape.png';
 import bcbsImage from './../../../images/projects/blueresource.png';
 import lhstImage from './../../../images/projects/lh-st.png';
 import abpmImage from './../../../images/projects/abpm.png';
+import _default from '@popperjs/core/lib/modifiers/popperOffsets';
 
 export default class Work extends React.Component {
   state = {
@@ -95,16 +96,33 @@ export default class Work extends React.Component {
       }
     });
 
-    // fade in projects on scroll
-    window.addEventListener('scroll', function() {
-      bottomPos = window.scrollY + window.innerHeight;
+    // The page listens to window scroll if mobile, main scroll is desktop
+    let nav = document.getElementsByTagName('nav');
+
+    if (nav[0].offsetWidth < 85) {
+      main.addEventListener('scroll', function() {
+        // console.log('main scrolling');
+        showProjects(main.scrollTop);
+      });
+    } else {
+      window.addEventListener('scroll', function() {
+        // console.log('window scrolling');
+        showProjects(window.scrollY);
+      });
+    }
+
+    // show projects when scrolling
+    const showProjects = (scrollAttribute) => {
+      // bottomPos = window.scrollY + window.innerHeight;
+      // bottomPos = main.scrollTop + window.innerHeight;
+      bottomPos = scrollAttribute + window.innerHeight;
 
       projects.forEach((project) => {
         if (project.offsetTop < bottomPos - offset) {
           project.classList.remove('hidden');
         }
       });
-    });
+    }
   }
 
   componentDidMount() {
