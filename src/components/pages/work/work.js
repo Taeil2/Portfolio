@@ -2,6 +2,7 @@ import React from 'react';
 import './work.scss';
 import Project from './project/project';
 
+// import bookmarksManagerImage from '../../../images/projects/bookmarks-manager.png';
 import bookmarksManagerImage from '../../../images/projects/bookmarks-manager.png';
 import linescapeImage from './../../../images/projects/linescape.png';
 import bcbsImage from './../../../images/projects/blueresource.png';
