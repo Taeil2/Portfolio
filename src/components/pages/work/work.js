@@ -2,13 +2,12 @@ import React from 'react';
 import './work.scss';
 import Project from './project/project';
 
-// import bookmarksManagerImage from '../../../images/projects/bookmarks-manager.png';
 import bookmarksManagerImage from '../../../images/projects/bookmarks-manager.png';
 import linescapeImage from './../../../images/projects/linescape.png';
 import bcbsImage from './../../../images/projects/blueresource.png';
 import lhstImage from './../../../images/projects/lh-st.png';
 import abpmImage from './../../../images/projects/abpm.png';
-import _default from '@popperjs/core/lib/modifiers/popperOffsets';
+// import _default from '@popperjs/core/lib/modifiers/popperOffsets';
 
 export default class Work extends React.Component {
   state = {
@@ -100,7 +99,7 @@ export default class Work extends React.Component {
     // The page listens to window scroll if mobile, main scroll is desktop
     let nav = document.getElementsByTagName('nav');
 
-    if (nav[0].offsetWidth < 85) {
+    if (nav[0].offsetWidth < 200) {
       main.addEventListener('scroll', function() {
         // console.log('main scrolling');
         showProjects(main.scrollTop);
