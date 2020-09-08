@@ -81,7 +81,7 @@ export default class Project extends React.Component {
             <h2>{this.props.data.name}</h2>
             <p>{this.props.data.description}</p>
             <div>
-              <a href={this.props.data.url} className="btn">Visit Site</a>
+              <a href={this.props.data.url} className="btn" target="_blank" rel="noopener noreferrer">Visit Site</a>
               {githubLink}
               {wireframeLink}
             </div>

@@ -19,8 +19,8 @@ export default class Work extends React.Component {
   projectsData = [
     {
       name: 'Bookmarks Manager',
-      description: "This is currently a work in progress for my Thinkful Bootcamp final project born out of a desire to organize my bookmarks in a visual layout. It draws inspiration from Google Chrome's new tab screen as well as the iOS home screen.",
-      // description: "This project was born out of a desire to organize my bookmarks in a visual layout and is my Thinkful Bootcamp final project. It draws inspiration from Google Chrome's new tab screen as well as the iOS home screen. I currently only have a demo for public use, but might release it online or on the Chrome store.",
+      description: "This is currently a work in progress for my Thinkful bootcamp final project born out of a desire to organize my bookmarks in a visual layout. It draws inspiration from Google Chrome's new tab screen as well as the iOS home screen.",
+      // description: "This project was born out of a desire to organize my bookmarks in a visual layout and is my Thinkful bootcamp final project. It draws inspiration from Google Chrome's new tab screen as well as the iOS home screen. I currently only have a demo for public use, but might release it online or on the Chrome store.",
       url: 'https://bookmarks-manager-front.taeil2.vercel.app/',
       github: 'https://github.com/Taeil2?tab=repositories&q=bookmarks-manager',
       wireframes: 'https://whimsical.com/78YBt1V9TEz4hZYPFvZoB2',
